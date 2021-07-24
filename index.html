@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Animation</title>
+    <title>Car Animation CSS and JavaScript</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
 </head>
 <body>
     <div class="container">
-        <button class="btn" onclick="oncl()"><img src="speaker.png"></button>
+        <div class="btn">
+            <audio id="myAudio" src="sound.mp3" preload="auto"> </audio>
+                <a onClick="togglePlay()"> <img src="speaker.png"> </a>
+        </div>
         <div class="sky"></div>
         <div class="trees"></div>
         <div class="track"></div>
@@ -22,5 +24,6 @@
             </div>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
